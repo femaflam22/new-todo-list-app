@@ -1,0 +1,119 @@
+form.form_edit {
+    width: 450px;
+    max-width: 100%;
+    margin-left: 20px;
+    border-top: 1px solid #f5bea5;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.todo {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 530px;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-right: 20px;
+    min-height: 215px;
+    height: 100%;
+}
+
+h3,
+h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.todo .left-item {
+    background: #f5bea5;
+    color: #fff;
+    padding: 10px 30px;
+    width: 300px;
+    position: relative;
+    text-align: start;
+    border-radius: 5px;
+}
+
+.todo .left-item p {
+    font-size: 1rem;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.todo .right-item {
+    position: relative;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.todo .right-item h6 {
+    margin-top: 10px;
+}
+
+.todo .right-item p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.todo .right-item .action {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+.todo .right-item .action a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+@media(max-width: 1200px) {
+    form.form_edit {
+        max-width: 900px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .todo {
+        max-width: 900px;
+        width: 100%;
+        min-height: 150px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    form.form_edit {
+        width: 90%;
+        margin: 30px auto 0 auto;
+    }
+    .todo {
+        flex-direction: column;
+        width: 90%;
+        margin: 30px auto 0 auto;
+    }
+    .todo .left-item {
+        width: 100%;
+    }
+    .todo .left-item h3 {
+        margin: 10px 0 0;
+        font-size: 1.3rem;
+    }
+    .todo .left-item p {
+        font-size: 0.8rem;
+    }
+    .todo .right-item h6 {
+        margin-top: 20px;
+    }
+    .todo .right-item h2 {
+        margin-top: 20px;
+        font-size: 1.3rem;
+    }
+    .todo .right-item p {
+        margin-bottom: 50px;
+        font-size: 0.7rem;
+    }
+}
