@@ -42,5 +42,5 @@ Route::middleware(['auth', 'preventBackHistory'])->group(function () {
     Route::get('/todo/complated/{id}', [ComplateController::class, 'update'])->name('todo.complated');
     Route::get('/todo/complate/{user_id}', [ComplateController::class, 'index'])->name('complated');
     Route::get('/todo/undo/{id}', [ComplateController::class, 'undo'])->name('complated.undo');
-    Route::get('/todo/complated/delete/{id}', [ComplateController::class, 'destroy'])->name('complated.destroy');
+    Route::delete('/todo/complated/delete/{id}', [ComplateController::class, 'destroy'])->name('complated.destroy');
 });

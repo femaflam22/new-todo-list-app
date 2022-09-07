@@ -109,6 +109,6 @@ class ComplateController extends Controller
     public function destroy($id)
     {
         Todo::where('id', $id)->delete();
-        return redirect()->route('todo',Auth::user()->id)->with('success', 'berhasil menghapus data kegiatan yang telah selesai');
+        return redirect()->back()->with('success', 'berhasil menghapus data kegiatan yang telah selesai');
     }
 }
